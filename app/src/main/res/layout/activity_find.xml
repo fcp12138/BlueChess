@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0eff4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/research_btn"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="@string/find_devices"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4E8AE4"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:text="@string/unbund_devices"/>
+
+    <ListView
+        android:id="@+id/unbund_devices_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4E8AE4"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/bunded_devices"/>
+
+    <ListView
+        android:id="@+id/bunded_devices_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

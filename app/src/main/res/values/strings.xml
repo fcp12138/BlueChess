@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">蓝牙对弈</string>
+
+    <!--main_activity-->
+    <string name="open_server">等待对手</string>
+    <string name="open_client">寻找对手</string>
+    <string name="history">历史记录</string>
+    <!--find_activity-->
+    <string name="find_devices">搜索设备</string>
+    <string name="unbund_devices">未匹配设备</string>
+    <string name="bunded_devices">已匹配设备</string>
+    <string name="no_supper_devices">不支持蓝牙</string>
+    <!--blueClient-->
+
+    <!--blueServer-->
+
+    <!--game_activity-->
+    <string name="ensure">确定</string>
+    <string name="send">发送</string>
+    <!--xlistview-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+</resources>

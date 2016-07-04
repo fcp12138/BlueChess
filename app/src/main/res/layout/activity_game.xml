@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/message_area"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/message_show_text"
+            android:textSize="12sp"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/send_btn_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/send"
+            android:background="#C9B569"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/edit_id"
+            android:layout_toLeftOf="@id/send_btn_id"
+            android:layout_toStartOf="@id/send_btn_id"
+            android:layout_toRightOf="@id/message_show_text"
+            android:layout_toEndOf="@id/message_show_text"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <com.fcp.bluechess.view.SquareLayout
+        android:id="@+id/squareLayout_id"
+        android:layout_below="@id/message_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fcp.bluechess.view.GameSurfaceView
+            android:id="@+id/gameSurfaceView_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.fcp.bluechess.view.SquareLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/squareLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_id"
+            android:background="#99DD9222"
+            android:text="@string/ensure"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_toLeftOf="@id/button_id"
+            android:layout_toStartOf="@id/button_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.fcp.bluechess.control.DirectionKey
+                android:id="@+id/directionKey_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

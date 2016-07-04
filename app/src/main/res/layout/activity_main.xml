@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0eff4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/open_server"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="@string/open_server"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/open_client"
+        android:layout_below="@id/open_server"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:text="@string/open_client"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:text="@string/history"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/open_client"
+        android:background="#4E8AE4"
+        android:padding="5dp"
+        android:layout_height="wrap_content" />
+
+    <com.fcp.bluechess.view.XListView
+        android:id="@+id/xlistview_id"
+        android:background="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="#00000000"
+        android:footerDividersEnabled="false"
+        android:layout_below="@id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
