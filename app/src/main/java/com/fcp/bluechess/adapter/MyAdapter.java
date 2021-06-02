@@ -62,7 +62,7 @@ public class MyAdapter extends BaseAdapter {
             holder = (ViewHolder)convertView.getTag();
         }
         holder.personTextView.setText(mData.get(position).get("game_person").toString());
-        if(mData.get(position).get("game_result")==0){
+        if(mData.get(position).get("game_result").equals(0)){
             holder.resultTextView.setText("败");
         }else{
             holder.resultTextView.setText("胜");

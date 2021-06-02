@@ -1,4 +1,4 @@
-﻿package com.fcp.bluechess.view;
+package com.fcp.bluechess.view;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -441,3 +441,4 @@ public class GameSurfaceView extends SurfaceView implements SurfaceHolder.Callba
         this.blueLinkWorker = blueLinkWorker;
     }
 }
+
