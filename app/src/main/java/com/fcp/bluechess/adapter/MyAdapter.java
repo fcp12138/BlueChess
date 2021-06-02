@@ -77,5 +77,6 @@ public class MyAdapter extends BaseAdapter {
         TextView timeTextView;
         TextView personTextView;
         TextView resultTextView;
+
     }
 }
